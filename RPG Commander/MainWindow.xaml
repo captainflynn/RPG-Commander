@@ -174,83 +174,100 @@
                                 </Grid>
                                 <TextBlock Text="Saving Throws" FontWeight="Bold" Margin="0 10 0 0"/>
                                 <!-- Saving Throws -->
-								<StackPanel Margin="0 5 0 0">
-									<!-- Strenght Saving Throw -->
-										<Grid>
-											<Grid.ColumnDefinitions>
-												<ColumnDefinition Width="*" />
-												<ColumnDefinition Width="*" />
-												<ColumnDefinition Width="2*" />
-											</Grid.ColumnDefinitions>
-											<CheckBox Margin="10 0 0 0" Grid.Column="0" />
-											<TextBox IsReadOnly="True" Background="#eee" Grid.Column="1" />
-											<TextBlock Margin="10 4 0 0" Grid.Column="2" Text="Strenght" />
-										</Grid>
+									<Grid>
+										<Grid.ColumnDefinitions>
+											<ColumnDefinition Width="*"/>
+											<ColumnDefinition Width="*"/>
+											<ColumnDefinition Width="2*"/>
+										</Grid.ColumnDefinitions>
+										<Grid.RowDefinitions>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+										</Grid.RowDefinitions>
 
-										<!-- Dexterity Saving Throw -->
-										<Grid Margin="0 5 0 0">
-											<Grid.ColumnDefinitions>
-												<ColumnDefinition Width="*" />
-												<ColumnDefinition Width="*" />
-												<ColumnDefinition Width="2*" />
-											</Grid.ColumnDefinitions>
-											<CheckBox Margin="10 0 0 0" Grid.Column="0" />
-											<TextBox IsReadOnly="True" Background="#eee" Grid.Column="1" />
-											<TextBlock Margin="10 4 0 0" Grid.Column="2" Text="Dexterity" />
-										</Grid>
-
-										<!-- Constitution Saving Throw -->
-										<Grid Margin="0 5 0 0">
-											<Grid.ColumnDefinitions>
-												<ColumnDefinition Width="*" />
-												<ColumnDefinition Width="*" />
-												<ColumnDefinition Width="2*" />
-											</Grid.ColumnDefinitions>
-											<CheckBox Margin="10 0 0 0" Grid.Column="0" />
-											<TextBox IsReadOnly="True" Background="#eee" Grid.Column="1" />
-											<TextBlock Margin="10 4 0 0" Grid.Column="2" Text="Constitution" />
-										</Grid>
-
-										<!-- Intelligence Saving Throw -->
-										<Grid Margin="0 5 0 0">
-											<Grid.ColumnDefinitions>
-												<ColumnDefinition Width="*" />
-												<ColumnDefinition Width="*" />
-												<ColumnDefinition Width="2*" />
-											</Grid.ColumnDefinitions>
-											<CheckBox Margin="10 0 0 0" Grid.Column="0" />
-											<TextBox IsReadOnly="True" Background="#eee" Grid.Column="1" />
-											<TextBlock Margin="10 4 0 0" Grid.Column="2" Text="Intelligence" />
-										</Grid>
-									
-										<!-- Wisdom Saving Throw -->
-										<Grid Margin="0 5 0 0">
-											<Grid.ColumnDefinitions>
-												<ColumnDefinition Width="*" />
-												<ColumnDefinition Width="*" />
-												<ColumnDefinition Width="2*" />
-											</Grid.ColumnDefinitions>
-											<CheckBox Margin="10 0 0 0" Grid.Column="0" />
-											<TextBox IsReadOnly="True" Background="#eee" Grid.Column="1" />
-											<TextBlock Margin="10 4 0 0" Grid.Column="2" Text="Wisdom" />
-										</Grid>
-
-										<!-- Charisma Saving Throw -->
-										<Grid Margin="0 5 0 0">
-											<Grid.ColumnDefinitions>
-												<ColumnDefinition Width="*" />
-												<ColumnDefinition Width="*" />
-												<ColumnDefinition Width="2*" />
-											</Grid.ColumnDefinitions>
-											<CheckBox Margin="10 0 0 0" Grid.Column="0" />
-											<TextBox IsReadOnly="True" Background="#eee" Grid.Column="1" />
-											<TextBlock Margin="10 4 0 0" Grid.Column="2" Text="Charisma" />
-										</Grid>
-									</StackPanel>
+										<!-- Strenght saving throw -->
+										<CheckBox Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"/>
+										<TextBox Grid.Column="1" Grid.Row="0" Padding="2" Margin="0 5" />
+										<TextBlock Grid.Column="2" Grid.Row="0" Text="Strenght" VerticalAlignment="Center" Margin="5 0 0 0"/>
+										<!-- Dexterity saving throw -->
+										<CheckBox Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center"/>
+										<TextBox Grid.Column="1" Grid.Row="1" Padding="2" Margin="0 5" />
+										<TextBlock Grid.Column="2" Grid.Row="1" Text="Dexterity" VerticalAlignment="Center" Margin="5 0 0 0"/>
+										<!-- Constitution saving throw -->
+										<CheckBox Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center"/>
+										<TextBox Grid.Column="1" Grid.Row="2" Padding="2" Margin="0 5" />
+										<TextBlock Grid.Column="2" Grid.Row="2" Text="Constitution" VerticalAlignment="Center" Margin="5 0 0 0"/>
+										<!-- Intelligence saving throw -->
+										<CheckBox Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center"/>
+										<TextBox Grid.Column="1" Grid.Row="3" Padding="2" Margin="0 5" />
+										<TextBlock Grid.Column="2" Grid.Row="3" Text="Intelligence" VerticalAlignment="Center" Margin="5 0 0 0"/>
+										<!-- Wisdom saving throw -->
+										<CheckBox Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center"/>
+										<TextBox Grid.Column="1" Grid.Row="4" Padding="2" Margin="0 5" />
+										<TextBlock Grid.Column="2" Grid.Row="4" Text="Wisdom" VerticalAlignment="Center" Margin="5 0 0 0"/>
+										<!-- Charisma saving throw -->
+										<CheckBox Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center"/>
+										<TextBox Grid.Column="1" Grid.Row="5" Padding="2" Margin="0 5" />
+										<TextBlock Grid.Column="2" Grid.Row="5" Text="Charisma" VerticalAlignment="Center" Margin="5 0 0 0"/>
+									</Grid>
 									<TextBlock Text="Skills" FontWeight="Bold" Margin="0 10 0 0"/>
-									<StackPanel>
-										
-									</StackPanel>
+									<!-- Skills -->
+									<Grid>
+										<Grid.ColumnDefinitions>
+											<ColumnDefinition Width="*"/>
+											<ColumnDefinition Width="*"/>
+											<ColumnDefinition Width="2*"/>
+										</Grid.ColumnDefinitions>
+										<Grid.RowDefinitions>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+											<RowDefinition Height="*"/>
+										</Grid.RowDefinitions>
+
+										<!-- Strenght saving throw -->
+										<CheckBox Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"/>
+										<TextBox Grid.Column="1" Grid.Row="0" Padding="2" Margin="0 5" />
+										<TextBlock Grid.Column="2" Grid.Row="0" Text="Strenght" VerticalAlignment="Center" Margin="5 0 0 0"/>
+										<!-- Dexterity saving throw -->
+										<CheckBox Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center"/>
+										<TextBox Grid.Column="1" Grid.Row="1" Padding="2" Margin="0 5" />
+										<TextBlock Grid.Column="2" Grid.Row="1" Text="Dexterity" VerticalAlignment="Center" Margin="5 0 0 0"/>
+										<!-- Constitution saving throw -->
+										<CheckBox Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center"/>
+										<TextBox Grid.Column="1" Grid.Row="2" Padding="2" Margin="0 5" />
+										<TextBlock Grid.Column="2" Grid.Row="2" Text="Constitution" VerticalAlignment="Center" Margin="5 0 0 0"/>
+										<!-- Intelligence saving throw -->
+										<CheckBox Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center"/>
+										<TextBox Grid.Column="1" Grid.Row="3" Padding="2" Margin="0 5" />
+										<TextBlock Grid.Column="2" Grid.Row="3" Text="Intelligence" VerticalAlignment="Center" Margin="5 0 0 0"/>
+										<!-- Wisdom saving throw -->
+										<CheckBox Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center"/>
+										<TextBox Grid.Column="1" Grid.Row="4" Padding="2" Margin="0 5" />
+										<TextBlock Grid.Column="2" Grid.Row="4" Text="Wisdom" VerticalAlignment="Center" Margin="5 0 0 0"/>
+										<!-- Charisma saving throw -->
+										<CheckBox Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center"/>
+										<TextBox Grid.Column="1" Grid.Row="5" Padding="2" Margin="0 5" />
+										<TextBlock Grid.Column="2" Grid.Row="5" Text="Charisma" VerticalAlignment="Center" Margin="5 0 0 0"/>
+									</Grid>
 								</StackPanel>
                         </Border>
                     </Grid>
