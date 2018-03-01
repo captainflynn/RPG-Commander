@@ -25,22 +25,30 @@ namespace RPG_Commander
             InitializeComponent();
         }
 
-        private void txtStrPoints_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        private void TxtStrPoints_LostKeyboardFocus(object sender, TextChangedEventArgs e)
         {
             if (txtStrPoints.Text != null && !string.IsNullOrWhiteSpace(txtStrPoints.Text))
             {
                 int StrPoints = Convert.ToInt32(txtStrPoints.Text);
                 int StrMod = 0;
+				string temp = "0";
 
 
                 if (StrPoints >= 0 && StrPoints <= 30)
                 {
                     StrMod = (StrPoints - 10) / 2;
-                    txtStrMod.Text = Convert.ToString(StrMod);
+					if (StrMod < 0)
+					{
+						txtStrMod.Text = Convert.ToString(StrMod);
+					}
+					else
+					{
+						txtStrMod.Text = "+" + Convert.ToString(StrMod);
+					}
                 }
                 else
                 {
-                    txtStrMod.Text = "?";
+					txtStrPoints.Text = "30";
                 }
             }
         }

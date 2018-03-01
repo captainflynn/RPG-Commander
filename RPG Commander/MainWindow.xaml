@@ -102,7 +102,7 @@
                                 <StackPanel>
                                     <TextBlock Text="Strength" FontWeight="Bold" FontSize="15" HorizontalAlignment="Center"/>
                                     <TextBox x:Name="txtStrMod" TextAlignment="Center" IsReadOnly="True" Background="#eee" Padding="2" Height="40" Margin="20 5 20 5" FontSize="20" VerticalAlignment="Center" />
-                                    <TextBox PreviewTextInput="txtStrPoints_PreviewTextInput" LostKeyboardFocus="txtStrPoints_LostKeyboardFocus" x:Name="txtStrPoints" TextAlignment="Center" Padding="2" Width="40" />
+                                    <TextBox PreviewTextInput="txtStrPoints_PreviewTextInput" TextChanged="TxtStrPoints_LostKeyboardFocus" x:Name="txtStrPoints" TextAlignment="Center" Padding="2" Width="40" />
                                 </StackPanel>
                                 <!-- Dexterity -->
                                 <StackPanel Margin="0 5">
