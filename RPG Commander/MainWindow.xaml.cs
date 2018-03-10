@@ -31,7 +31,6 @@ namespace RPG_Commander
             {
                 int StrPoints = Convert.ToInt32(txtStrPoints.Text);
                 int StrMod = 0;
-				string temp = "0";
 
 
                 if (StrPoints >= 0 && StrPoints <= 30)

@@ -6,7 +6,7 @@
 		xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:RPG_Commander"
         mc:Ignorable="d"
-        Title="Character Sheet" Height="1050" Width="900">
+        Title="Character Sheet" Height="925" Width="900">
     <Border Padding="10">
         <StackPanel>
             <!-- Basic Information -->
@@ -38,7 +38,7 @@
                             <!-- Class -->
                             <StackPanel Grid.Column="0" Margin="0 0 5 0">
                                 <TextBlock Text="Class" />
-                                <TextBox Padding="2"/>
+                                <Controls:DropDownButton Padding="2"/>
                             </StackPanel>
                             <!-- Level -->
                             <StackPanel Grid.Column="1">
@@ -96,7 +96,7 @@
                             <ColumnDefinition Width="2*" />
                         </Grid.ColumnDefinitions>
                         <!-- Main Modifiers -->
-                        <Border BorderBrush="Gray" BorderThickness="2" Grid.Column="0" Margin="0 50 0 50">
+                        <Border BorderBrush="Gray" BorderThickness="2" Grid.Column="0" Margin="0 0 0 25">
                             <StackPanel>
                                 <!-- Strenght -->
                                 <StackPanel>
@@ -157,7 +157,7 @@
                                 </Grid>
                                 <TextBlock Text="Saving Throws" FontWeight="Bold" Margin="0 5 0 0"/>
                                 <!-- Saving Throws -->
-                                <Grid Height="159">
+                                <Grid Height="151">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="*"/>
@@ -172,33 +172,33 @@
                                         <RowDefinition/>
                                     </Grid.RowDefinitions>
                                     <!-- Strenght saving throw -->
-                                    <CheckBox Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" />
-                                    <TextBox Grid.Column="1" Grid.Row="0" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="0" />
                                     <TextBlock Grid.Column="2" Grid.Row="0" Text="Strenght" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Dexterity saving throw -->
-                                    <CheckBox Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="1" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="1" />
                                     <TextBlock Grid.Column="2" Grid.Row="1" Text="Dexterity" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Constitution saving throw -->
-                                    <CheckBox Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="2" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="2" />
                                     <TextBlock Grid.Column="2" Grid.Row="2" Text="Constitution" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Intelligence saving throw -->
-                                    <CheckBox Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="3" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="3" />
                                     <TextBlock Grid.Column="2" Grid.Row="3" Text="Intelligence" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Wisdom saving throw -->
-                                    <CheckBox Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="4" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="4" />
                                     <TextBlock Grid.Column="2" Grid.Row="4" Text="Wisdom" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Charisma saving throw -->
-                                    <CheckBox Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="5" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="5" />
                                     <TextBlock Grid.Column="2" Grid.Row="5" Text="Charisma" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                 </Grid>
                                 <TextBlock Text="Skills" FontWeight="Bold" Margin="0 2 0 0"/>
                                 <!-- Skills -->
-                                <Grid Height="490">
+                                <Grid Height="390">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="*"/>
@@ -225,76 +225,76 @@
                                         <RowDefinition Height="*"/>
                                     </Grid.RowDefinitions>
                                     <!-- Acrobatics -->
-                                    <CheckBox Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="0" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="0" />
                                     <TextBlock Grid.Column="2" Grid.Row="0" Text="Acrobatics" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Animal Handling -->
-                                    <CheckBox Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="1" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="1" />
                                     <TextBlock Grid.Column="2" Grid.Row="1" Text="Animal Handling" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Arcana -->
-                                    <CheckBox Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="2" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="2" />
                                     <TextBlock Grid.Column="2" Grid.Row="2" Text="Arcana" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Athletics -->
-                                    <CheckBox Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="3" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="3" />
                                     <TextBlock Grid.Column="2" Grid.Row="3" Text="Athletics" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Deception -->
-                                    <CheckBox Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="4" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="4" />
                                     <TextBlock Grid.Column="2" Grid.Row="4" Text="Deception" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- History -->
-                                    <CheckBox Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="5" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="5" />
                                     <TextBlock Grid.Column="2" Grid.Row="5" Text="History" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Insight -->
-                                    <CheckBox Grid.Column="0" Grid.Row="6" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="6" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="6" />
                                     <TextBlock Grid.Column="2" Grid.Row="6" Text="Insight" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Intimidation -->
-                                    <CheckBox Grid.Column="0" Grid.Row="7" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="7" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="7" />
                                     <TextBlock Grid.Column="2" Grid.Row="7" Text="Intimidation" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Investigation -->
-                                    <CheckBox Grid.Column="0" Grid.Row="8" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="8" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="8" />
                                     <TextBlock Grid.Column="2" Grid.Row="8" Text="Investigation" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Medicine -->
-                                    <CheckBox Grid.Column="0" Grid.Row="9" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="9" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="9" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="9" />
                                     <TextBlock Grid.Column="2" Grid.Row="9" Text="Medicine" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Nature -->
-                                    <CheckBox Grid.Column="0" Grid.Row="10" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="10" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="10" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="10" />
                                     <TextBlock Grid.Column="2" Grid.Row="10" Text="Nature" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Perception -->
-                                    <CheckBox Grid.Column="0" Grid.Row="11" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="11" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="11" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="11" />
                                     <TextBlock Grid.Column="2" Grid.Row="11" Text="Perception" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Performance -->
-                                    <CheckBox Grid.Column="0" Grid.Row="12" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="12" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="12" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="12" />
                                     <TextBlock Grid.Column="2" Grid.Row="12" Text="Performance" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Persuasion -->
-                                    <CheckBox Grid.Column="0" Grid.Row="13" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="13" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="13" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="13" />
                                     <TextBlock Grid.Column="2" Grid.Row="13" Text="Persuasion" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Religion -->
-                                    <CheckBox Grid.Column="0" Grid.Row="14" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="14" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="14" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="14" />
                                     <TextBlock Grid.Column="2" Grid.Row="14" Text="Religion" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Sleight of Hand -->
-                                    <CheckBox Grid.Column="0" Grid.Row="15" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="15" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="15" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="15" />
                                     <TextBlock Grid.Column="2" Grid.Row="15" Text="Sleight of Hand" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Stealth -->
-                                    <CheckBox Grid.Column="0" Grid.Row="16" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="16" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="16" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="16" />
                                     <TextBlock Grid.Column="2" Grid.Row="16" Text="Stealth" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                     <!-- Survival -->
-                                    <CheckBox Grid.Column="0" Grid.Row="17" HorizontalAlignment="Center"/>
-                                    <TextBox Grid.Column="1" Grid.Row="17" Padding="2" IsReadOnly="True" Background="#eee" />
+                                    <CheckBox Grid.Column="0" Grid.Row="17" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBox Style="{StaticResource SkillBox}" Grid.Column="1" Grid.Row="17" />
                                     <TextBlock Grid.Column="2" Grid.Row="17" Text="Survival" VerticalAlignment="Center" Margin="5 0 0 0"/>
                                 </Grid>
                             </StackPanel>
@@ -436,6 +436,8 @@
                             <TextBox Grid.Column="1" Grid.Row="3" Margin="0 5 0 0"/>
                             <TextBox Grid.Column="2" Grid.Row="3" Margin="5 5 0 0"/>
                         </Grid>
+                        <TextBox Margin="0 5" Height="75" TextWrapping="Wrap" AcceptsReturn="True" AcceptsTab="True" VerticalScrollBarVisibility="Auto"/>
+                        <TextBlock Text="Attacks and Spellcasting" HorizontalAlignment="Center" />
                     </StackPanel>
                 </StackPanel>
             </Grid>
